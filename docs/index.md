@@ -1,86 +1,122 @@
 # 欢迎来到 Alexander's Notebook
 
 !!! info "关于这个网站"
-    这是我的个人学习笔记网站，记录我在数学、物理和编程方面的学习心得和知识总结。
+    这是我的个人学习笔记网站，专注于数理知识、编程基础、实用工具等领域的学习心得和知识积累。
 
 ## 🚀 快速导航
 
 <div class="grid cards" markdown>
 
--   :material-calculator: **数学**
+-   :material-calculator: **数理知识**
 
     ---
 
-    从高等数学到线性代数，从概率论到统计学
+    数学基础、物理原理、统计分析等理论知识
     
-    [:octicons-arrow-right-24: 探索数学世界](mathematics/)
+    [:octicons-arrow-right-24: 探索数理世界](mathematics/)
 
--   :material-atom: **物理**
-
-    ---
-
-    经典力学、电磁学、量子力学等物理学科笔记
-    
-    [:octicons-arrow-right-24: 进入物理领域](physics/)
-
--   :material-code-tags: **编程**
+-   :material-code-tags: **编程基础**
 
     ---
 
-    Python、算法、机器学习等编程相关内容
+    编程语言、算法思维、开发工具等技术内容
     
     [:octicons-arrow-right-24: 学习编程技术](programming/)
 
--   :material-tools: **工具**
+-   :material-tools: **实用工具**
 
     ---
 
-    LaTeX、Git、VS Code 等学习工具使用指南
+    写作工具、开发工具、效率工具使用指南
     
     [:octicons-arrow-right-24: 掌握工具技能](tools/)
 
+-   :material-lightbulb: **学习心得**
+
+    ---
+
+    学习方法、学习感悟、学习规划分享
+    
+    [:octicons-arrow-right-24: 分享学习经验](learning/)
+
+-   :material-rocket-launch: **项目实践**
+
+    ---
+
+    个人项目、实验项目、数据分析实战
+    
+    [:octicons-arrow-right-24: 查看项目实践](projects/)
+
 </div>
 
-## 📈 最新更新
+## 📈 版本更新
 
-- **2024-01-15**: 添加了量子力学基本原理笔记
-- **2024-01-10**: 完善了线性代数特征值章节
-- **2024-01-05**: 新增 Python 科学计算实例
+- **v2.0**: 网站架构重构，聚焦五大核心板块，优化用户体验
+- **v1.5**: 主题美化升级，采用现代化蓝色系设计
+- **v1.0**: 建立个人学习笔记体系，开始知识积累之旅
 
-## 💡 特性
+## 💡 网站特性
 
-- **📝 Markdown 原生支持**: 所有笔记都用 Markdown 编写
-- **🧮 数学公式**: 支持 LaTeX 数学公式渲染
-- **💻 代码高亮**: 多种编程语言语法高亮
-- **🌓 暗色模式**: 支持浅色/暗色主题切换
-- **🔍 全文搜索**: 快速找到需要的内容
-- **📱 响应式设计**: 完美支持移动设备
+- **📝 Markdown 原生支持**: 所有笔记都用 Markdown 编写，简洁易读
+- **🧮 数学公式渲染**: 完美支持 LaTeX 数学公式显示
+- **💻 代码语法高亮**: 多种编程语言语法高亮显示
+- **🌓 暗色模式切换**: 支持浅色/暗色主题自由切换
+- **🔍 全文搜索功能**: 快速定位所需内容
+- **📱 响应式设计**: 完美适配桌面和移动设备
 
-## 📚 学习路径建议
+## 🎯 学习理念
 
-### 数学基础
-1. 从 [极限与连续](mathematics/calculus/limits.md) 开始
-2. 学习 [导数与微分](mathematics/calculus/derivatives.md)
-3. 掌握 [积分方法](mathematics/calculus/integrals.md)
+!!! tip "持续学习"
+    **记录 → 思考 → 实践 → 分享**
+    
+    通过系统化的记录和整理，将零散的知识点连接成完整的知识体系。
 
-### 物理入门
-1. 回顾 [牛顿定律](physics/mechanics/newton-laws.md)
-2. 理解 [能量守恒](physics/mechanics/energy-momentum.md)
-3. 探索 [电磁现象](physics/electromagnetism/electric-field.md)
+## 🛠️ 使用指南
 
-### 编程实践
-1. 掌握 [Python 基础](programming/python/basics.md)
-2. 学习 [数据结构](programming/python/data-structures.md)
-3. 实践 [算法设计](programming/algorithms/sorting.md)
+### 导航技巧
+- 使用顶部导航栏快速切换板块
+- 点击搜索图标 :material-magnify: 进行全文搜索
+- 右上角主题切换 :material-brightness-6: 调节视觉体验
+
+### 内容组织
+- **数理知识**: 理论基础和原理解释
+- **编程基础**: 实用技能和代码实践  
+- **实用工具**: 效率提升和工具使用
+- **学习心得**: 方法总结和经验分享
+- **项目实践**: 实战案例和成果展示
+
+## 🛡️ 网站认证
+
+### 安全与合规
+
+![Security](https://img.shields.io/badge/Security-HTTPS-brightgreen?style=for-the-badge&logo=lock)
+![Privacy](https://img.shields.io/badge/Privacy-Protected-blue?style=for-the-badge&logo=shield) 
+![Accessibility](https://img.shields.io/badge/Accessibility-AA-success?style=for-the-badge&logo=accessibility)
+![Quality](https://img.shields.io/badge/Quality-High-green?style=for-the-badge&logo=check-circle)
+
+### 技术栈
+
+![Built with MkDocs](https://img.shields.io/badge/Built%20with-MkDocs-326ce5?style=flat-square&logo=markdown)
+![Material Theme](https://img.shields.io/badge/Theme-Material-ff5722?style=flat-square&logo=material-design)
+![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-181717?style=flat-square&logo=github)
+![MathJax](https://img.shields.io/badge/Math-MathJax-00a86b?style=flat-square&logo=latex)
+![Progressive Web App](https://img.shields.io/badge/PWA-Ready-purple?style=flat-square&logo=pwa)
+
+### 版本信息
+
+![Version](https://img.shields.io/badge/Version-2.0-blue?style=flat-square&logo=tag)
+![Last Updated](https://img.shields.io/badge/Updated-2025-green?style=flat-square&logo=calendar)
+![License Content](https://img.shields.io/badge/Content-CC%20BY--NC--SA%204.0-orange?style=flat-square&logo=creative-commons)
+![License Code](https://img.shields.io/badge/Code-MIT-yellow?style=flat-square&logo=open-source-initiative)
+
+## 📄 许可证
+
+- **内容许可**: [CC BY-NC-SA 4.0](https://github.com/AlexanderJ-Carter/Notebook/blob/master/LICENSE) - 允许非商业使用、分享和修改
+- **源码许可**: [MIT License](https://github.com/AlexanderJ-Carter/Notebook/blob/master/LICENSE) - 开源自由使用
 
 ---
 
-!!! tip "使用建议"
-    - 使用顶部搜索框快速查找内容
-    - 点击右上角 :material-brightness-6: 切换主题模式
-    - 每个页面底部都有"编辑此页"链接，欢迎贡献
-
-!!! quote "学习格言"
-    > "学而时习之，不亦说乎？" —— 孔子
+!!! quote "学习箴言"
+    > "路漫漫其修远兮，吾将上下而求索。" —— 屈原
     
-    持续学习，记录成长，这就是这个笔记本存在的意义。
+    学习是一个持续的过程，记录是成长的见证。欢迎与我一同探索知识的海洋！

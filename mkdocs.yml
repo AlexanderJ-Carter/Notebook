@@ -1,32 +1,27 @@
 # 网站信息
 site_name: Alexander's Notebook
 site_description: 我的个人学习笔记 - 数学、物理、编程
-site_author: Alexander Xin
-site_url: https://alexanderj-carter.github.io/notebook/
+site_author: Alexander James Carter
+site_url: https://notebook.alexander.xin
+
+# 版权信息
+copyright: '&copy; 2025 <a href="https://alexander.xin" target="_blank" rel="noopener">Alexander James Carter</a>'
 
 # 额外配置
 extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/alexander-xin
-      name: GitHub
-    - icon: fontawesome/solid/envelope
-      link: mailto:alexander@example.com
-      name: 邮箱联系
-    - icon: fontawesome/brands/weixin
-      link: "#"
-      name: 微信
-    - icon: fontawesome/solid/home
-      link: https://alexander.xin
-      name: 个人主页
-  
-  # 版权信息
-  copyright: |
-    &copy; 2024 <a href="https://alexander.xin" target="_blank" rel="noopener">Alexander Xin</a> · 
-    用 ❤️ 和 <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a> 构建
-  
-  # 生成器信息
-  generator: false
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/alexander-xin
+          name: GitHub
+        - icon: fontawesome/solid/envelope
+          link: mailto:notebook@alexander.xin
+          name: 邮箱联系
+        - icon: fontawesome/solid/home
+          link: https://alexander.xin
+          name: 个人主页
+
+    # 生成器信息
+    generator: false
 # 仓库信息（可选）
 repo_name: AlexanderJ-Carter/Notebook
 repo_url: https://github.com/AlexanderJ-Carter/Notebook
@@ -34,167 +29,108 @@ edit_uri: edit/master/docs/
 
 # 主题配置
 theme:
-  name: material
-  language: zh
-  palette:
-    # 浅色模式 - 暖色调
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep orange
-      accent: amber
-      toggle:
-        icon: material/brightness-7
-        name: 切换到暗色模式
-    # 深色模式 - 温暖护眼
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep orange
-      accent: amber
-      toggle:
-        icon: material/brightness-4
-        name: 切换到浅色模式
-  
-  # 功能特性
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - navigation.path
-    - navigation.top
-    - search.highlight
-    - search.share
-    - search.suggest
-    - content.code.copy
-    - content.code.annotate
-    - content.tabs.link
+    name: material
+    language: zh
+    palette:
+        # 浅色模式 - 蓝色调
+        - media: '(prefers-color-scheme: light)'
+          scheme: default
+          primary: blue
+          accent: light blue
+          toggle:
+              icon: material/brightness-7
+              name: 切换到暗色模式
+        # 深色模式 - 蓝色调
+        - media: '(prefers-color-scheme: dark)'
+          scheme: slate
+          primary: blue
+          accent: light blue
+          toggle:
+              icon: material/brightness-4
+              name: 切换到浅色模式
 
-  # 图标和字体
-  icon:
-    repo: fontawesome/brands/github
-  font:
-    text: Roboto
-    code: Roboto Mono
+    # 功能特性
+    features:
+        - navigation.tabs
+        - navigation.sections
+        - navigation.expand
+        - navigation.path
+        - navigation.top
+        - search.highlight
+        - search.share
+        - search.suggest
+        - content.code.copy
+        - content.code.annotate
+        - content.tabs.link
+
+    # 图标和字体
+    icon:
+        repo: fontawesome/brands/github
+    font:
+        text: Roboto
+        code: Roboto Mono
 
 # GitHub Pages 配置
 use_directory_urls: true
 
 # 插件
 plugins:
-  - search:
-      lang:
-        - zh
-        - en
-  - tags
-  - git-revision-date-localized:
-      enable_creation_date: true
-      fallback_to_build_date: true
+    - search:
+          lang:
+              - zh
+              - en
+    - tags
+    - git-revision-date-localized:
+          enable_creation_date: true
+          fallback_to_build_date: true
 
 # Markdown 扩展
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - attr_list
-  - md_in_html
-  - tables
-  - footnotes
-  - pymdownx.arithmatex:
-      generic: true
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.tabbed:
+          alternate_style: true
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - attr_list
+    - md_in_html
+    - tables
+    - footnotes
+    - pymdownx.arithmatex:
+          generic: true
 
-# 数学公式支持
+# 数学公式支持和评论系统
 extra_javascript:
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+    - javascripts/mathjax.js
+    - javascripts/giscus.js
+    - https://polyfill.io/v3/polyfill.min.js?features=es6
+    - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 # 自定义样式
 extra_css:
-  - stylesheets/extra.css
+    - stylesheets/extra.css
 
 # 导航结构
 nav:
-  - 首页: index.md
-  - 数学:
-    - 概述: mathematics/index.md
-    - 高等数学:
-      - 极限与连续: mathematics/calculus/limits.md
-      - 导数与微分: mathematics/calculus/derivatives.md
-      - 积分: mathematics/calculus/integrals.md
-    - 线性代数:
-      - 向量与矩阵: mathematics/linear-algebra/vectors-matrices.md
-      - 特征值与特征向量: mathematics/linear-algebra/eigenvalues.md
-    - 概率论:
-      - 基本概念: mathematics/probability/basics.md
-      - 随机变量: mathematics/probability/random-variables.md
-  - 物理:
-    - 概述: physics/index.md
-    - 经典力学:
-      - 牛顿定律: physics/mechanics/newton-laws.md
-      - 能量与动量: physics/mechanics/energy-momentum.md
-    - 电磁学:
-      - 电场与电势: physics/electromagnetism/electric-field.md
-      - 磁场与感应: physics/electromagnetism/magnetic-field.md
-    - 量子力学:
-      - 基本原理: physics/quantum/principles.md
-      - 薛定谔方程: physics/quantum/schrodinger.md
-  - 编程:
-    - 概述: programming/index.md
-    - Python:
-      - 基础语法: programming/python/basics.md
-      - 数据结构: programming/python/data-structures.md
-      - 科学计算: programming/python/scientific-computing.md
-    - 算法:
-      - 排序算法: programming/algorithms/sorting.md
-      - 图算法: programming/algorithms/graph.md
-    - 机器学习:
-      - 监督学习: programming/machine-learning/supervised.md
-      - 深度学习: programming/machine-learning/deep-learning.md
-  - 工具:
-    - 概述: tools/index.md
-    - LaTeX: tools/latex.md
-    - Git: tools/git.md
-    - VS Code: tools/vscode.md
-  - 关于: about.md
-
-# 额外配置
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/alexander-xin
-      name: GitHub
-    - icon: fontawesome/solid/envelope
-      link: mailto:alexander@example.com
-      name: 邮箱联系
-    - icon: fontawesome/solid/home
-      link: https://alexander.xin
-      name: 个人主页
-  
-  # 版权信息
-  copyright: |
-    <div style="text-align: center; margin: 1rem 0;">
-      <div style="font-size: 1rem; color: inherit; margin-bottom: 0.5rem;">
-        <strong>Alexander James Carter</strong>
-      </div>
-      <div style="font-size: 0.85rem; opacity: 0.8;">
-        &copy; 2024 Alexander James Carter. All rights reserved.
-      </div>
-      <div style="font-size: 0.8rem; opacity: 0.7; margin-top: 0.3rem;">
-        用 ❤️ 和 <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none; border-bottom: 1px dotted;">Material for MkDocs</a> 构建
-      </div>
-    </div>
-  
-  # 隐藏生成器信息
-  generator: false
+    - 首页: index.md
+    - 数理知识:
+          - 概述: mathematics/index.md
+    - 编程基础:
+          - 概述: programming/index.md
+    - 实用工具:
+          - 概述: tools/index.md
+    - 学习心得:
+          - 概述: learning/index.md
+    - 项目实践:
+          - 概述: projects/index.md
+    - 关于: about.md
