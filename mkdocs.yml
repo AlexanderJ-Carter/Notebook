@@ -75,6 +75,9 @@ theme:
     text: Roboto
     code: Roboto Mono
 
+# GitHub Pages 配置
+use_directory_urls: true
+
 # 插件
 plugins:
   - search:
