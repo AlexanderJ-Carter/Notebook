@@ -2,7 +2,9 @@
 site_name: Alexander's Notebook
 site_description: 我的个人学习笔记 - 数学、物理、编程
 site_author: Alexander Xin
-site_url: https://notebook.alexan# 额外配置
+site_url: https://alexanderj-carter.github.io/notebook/
+
+# 额外配置
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -26,9 +28,9 @@ extra:
   # 生成器信息
   generator: false
 # 仓库信息（可选）
-repo_name: alexander-xin/notebook
-repo_url: https://github.com/alexander-xin/notebook
-edit_uri: edit/main/docs/
+repo_name: AlexanderJ-Carter/Notebook
+repo_url: https://github.com/AlexanderJ-Carter/Notebook
+edit_uri: edit/master/docs/
 
 # 主题配置
 theme:
